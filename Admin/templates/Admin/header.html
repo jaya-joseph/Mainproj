@@ -1,0 +1,37 @@
+{% load static %}
+{% block content1 %}
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.php"><img class="img-fulid" src="{% static 'images/logo.png' %}" alt="RIT" style="width:50px" id='Logo'></a></a><h3 style="color :#007bff ; font-family: 'Berkshire Swash', cursive;" ><span style="color :white;">RIT</span>Soft <span style="color :red;">v2</span></h3>
+        <!--<h3 style="color :blue ; font-family:'Ubuntu Condensed', sans-serif;" ><span style="color :white;">RIT</span>Soft <span style="color :red;">v2</span></h3>-->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+          <!--<li class="nav-item">
+              <a class="nav-link" href="http://mca.rit.ac.in/testing/hostel">Hostel</a>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="about.php">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.php">Contact</a>
+            </li>
+			<li class="nav-item">
+
+              <button class="btn btn-primary"  onclick="window.location.href=''">Login</button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	<br>
+	<br>
+	<br>
+
+<section id="data">
+    {% endblock content1 %}

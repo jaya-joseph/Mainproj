@@ -1,0 +1,46 @@
+{% extends "./home.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Select Designation</h2>
+                    </div>
+				</div>
+<form id="submit" method="post" >
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+<label>Department:</label>
+<select onchange="getfac(this.value)" name="dept" class="form-control" required>>
+    <option value="" selected disabled hidden>-- select department -- </option>
+    {% for results in Department %}
+    <option>{{ results.deptname }} </option>
+
+
+    {% endfor %}
+
+</select>
+</div>
+</div>
+
+<div id="data">
+
+</div>
+</div>
+
+</form>
+
+{% endblock content %}
+{% block js_block %}
+
+     <script type="text/javascript" src="{% static './dash/dist/js/design.js' %}"> </script>
+
+{% endblock js_block %}
+              <!--  <select onchange="getfac(this.value)" name="dept" class="form-control" required>
+<option value="" selected disabled hidden>Select</option>
+<option disabled="true" selected>-- select department -- </option>-->

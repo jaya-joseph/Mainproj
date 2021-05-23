@@ -1,0 +1,48 @@
+
+{% extends "./home.html" %}
+{% block content %}
+
+<div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Academic Year Setting</h2>
+                    </div>
+				</div>
+
+			</div>
+    <form method="post">
+
+<div class="row">
+	<div class="col-md-6">
+		<label>Current Academic Year :</label>
+        <div>
+		<div>
+		<br><br>
+<div class="row">
+	<div class="col-md-6">
+		<label>Change Academic Year</label>
+		<select class="form-control" name="acd">
+			<option value="">--select--</option>
+			{% for results in AcademicYear %}
+			<option>{{ results.acd_year }} </option>
+    		{% endfor %}
+            </select>
+	</div>
+</div>
+<br>
+
+<div class="row">
+<div class="col-sm-4">
+
+</div>
+
+<div class="col-sm-4">
+	<input type="submit" class="btn btn-primary btn-block" value="Change" name="change">
+</div>
+</div>
+
+</form>
+
+</div>
+{% endblock content %}

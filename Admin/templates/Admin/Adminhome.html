@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>RITSoftv2</title>
+    <link rel="icon" type="image/png" href="{% static 'images/logob.png' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="{% static './dash/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    	<style>
+	.title {
+    font-family: 'Open Sans', sans-serif;
+}
+	body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+html {
+    background-color: black;
+}
+	</style>
+
+
+</head>
+<body>
+{% include 'Admin/header.html' %}
+{% block content1 %}
+ <div class="container">
+
+      <h1 class="my-4">Welcome to RIT</h1>
+
+
+      <div>
+{% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
