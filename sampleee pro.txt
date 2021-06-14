@@ -1,0 +1,9 @@
+rit-erp system is a web-based application that  provides a simple interface for maintenance of different student, department, faculties, parents and others
+information.The college  have a number of departments and educational modules such as courses, electives,
+etc. Managing all these departments and other modules manually is a very difficult and hard, ineffective and expensive task.
+So here we propose an ERP system for college.
+ ERP system has all the information about the students, teachers, events, departments and other respected
+information. The system allows the faculty to add students, courses and any other events. Our system allows a faculty to enter
+or input student’s attendance into the database which can later be viewed by students and faculties. The students can view
+his/her attendance through a separate student login. The time table is then available to be viewed by faculties and students on the web portal. These systems have
+easy user interface and have powerful data management system which makes this system is very useful. is a userfriendly web-based platform 
